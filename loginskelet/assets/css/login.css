@@ -11,22 +11,16 @@ body {
     height: 42px;
     border-radius: 4px;
     background-color: #01010155;
-	border:0;
+	border: 0;
     outline: 0;
     padding: 1em;
     color: #4c4f5c;
 }
 
-.line-input:hover {
+.line-input:hover, .line-input:focus {
     border-color: #757575;
-    border-style:solid;
-    border-width:1px;
-}
-
-.line-input:focus {
-    border-color: #757575;
-    border-style:solid;
-    border-width:1px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .line-input:disabled {
@@ -65,7 +59,7 @@ input[type="checkbox"].input-checkbox {
 
 input[type="checkbox"]:checked.input-checkbox {
     background-image: url("../img/check.png");
-    border:0;
+    border: 0;
 }
 
 input[type="checkbox"].input-checkbox:disabled {
@@ -97,12 +91,8 @@ a.input-link {
     text-decoration: none;
 }
 
-a.input-link:hover{
-	text-decoration:underline;
-}
-
-a.input-link:focus{
-	text-decoration:underline;
+a.input-link:hover, a.input-link:focus {
+	text-decoration: underline;
 }
 
 div.paper {
