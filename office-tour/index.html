@@ -14,7 +14,7 @@
             <img src="assets/img/logo_c.png">
         </div>
         <div class="row button-row d-flex justify-content-center" style="margin-top: 2em">
-            <button class="btn input-button shadow-none">Далее</button>
+            <button class="btn input-button shadow-none" id="nextbtn">Далее</button>
         </div>
         <div class="row bubble-row" style="position: absolute; bottom: 30vh; left: 15%; z-index: 1">
             <p class="bubble speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos</p>
@@ -23,6 +23,35 @@
             <img src="assets/img/newton.gif" style="width: 75%; z-index: -1">
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        const tour = [
+            "12312312312 3123123123 1231231231 23123123123 123123123123123 1231231231231 2312312312 3123123",
+            "456",
+            "789",
+            "000"
+        ]
+        let i = 0;
+        let stop = false;
+        $(document).ready(function () {
+            let width = window.screen.width;
+            if (width > 450) {
+                $('.container').remove();
+                $('body').html("Эту презентацию лучше смотреть на телефоне ;)");
+                stop = true;
+            } else $('p.bubble.speech').html(tour[i]);
+        });
+        $('#nextbtn').on('click', function () {
+            if (stop === false) {
+                i += 1;
+                $('p.bubble.speech').html(tour[i]);
+                if ((i + 1) === tour.length) {
+                    stop = true;
+                    $('#nextbtn').remove();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
