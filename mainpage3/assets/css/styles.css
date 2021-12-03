@@ -89,3 +89,27 @@ tbody{
 .custom-primary:hover{
 	background-color: #009FDA;
 }
+.oresh{
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	background: url('../img/oresh.png');
+	background-size: cover;
+	border: 1px solid white;
+}
+.vined{
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	background: url('../img/vined.png');
+	background-size: cover;
+	border: 1px solid white;
+}
+.belou{
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	background: url('../img/belou.png');
+	background-size: cover;
+	border: 1px solid white;
+}
