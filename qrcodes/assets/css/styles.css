@@ -129,36 +129,8 @@ div.paper.dark-paper{
   background-position-x: 50%;
   margin-top:10em;
 }
-input[type="checkbox"].input-checkbox {
-  width: 16px;
-  height: 16px;
-  background-color: #0101010f;
-  border-color: #858585;
-  border-radius: 4px;
-  box-shadow: none;
-  outline: 0;
-  margin-right: 0.3em;
-}
-svg.bi-three-dots-vertical{
-  color: #A0A0A0;
-}
-input[type="checkbox"]:checked.input-checkbox {
-  background-image: url("../img/check.png");
-  border: 0;
-}
-
-input[type="checkbox"].input-checkbox:disabled {
-  background-color: #F5F6F7;
-  border-color: #B9BFC5;
-}
-
-.belou{
-  width:20px ;
-  height:20px ;
-  border-radius: 10px;
-  background-size: cover;
-  border: 1px solid white;
-  padding:0;
+span{
+  color:#FFD84F;
 }
 .image{
   width:70px;
@@ -185,7 +157,9 @@ input[type="checkbox"].input-checkbox:disabled {
 p{
   font-size:0.6em;
   color: #FFFFFF;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.4em;
+  margin-top:0.4em;
+  text-align:center;
 }
 button.input-button {
   max-width: 80%;
