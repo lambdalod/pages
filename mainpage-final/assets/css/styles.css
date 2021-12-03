@@ -1,6 +1,7 @@
 body {
     background: url("../img/mainpage1.jpg") no-repeat;
     background-size: cover;
+	padding-bottom: 3em;
 }
 .image-button{
 	color:white;
@@ -11,6 +12,7 @@ body {
 .nav-current{
 	color: #E3E5E8 !important;
 	font-size: 1.5em;
+	text-align: center;
 	text-decoration: none !important;
 }
 .nav-current:hover{
@@ -25,6 +27,7 @@ body {
 	color: #A0A0A0 !important;
 	font-size: 1.5em;
 	text-decoration: none;
+	text-align: center;
 }
 .nav-other:focus{
 	color: #A0A0A0;
@@ -87,10 +90,9 @@ div.paper {
 	background-color: #777777;
 }
 .big-avatar{
-	width:225px;
+	width: 225px;
 	height:225px;
-	background: url("../img/big_avatar.png");
-	background-size:cover;
+	background-size: cover;
 }
 input[type="checkbox"].input-checkbox {
     width: 16px;
@@ -147,7 +149,6 @@ tbody{
 	width:20px;
 	height:20px;
 	border-radius: 10px;
-	background: url('../img/oresh.png');
 	background-size: cover;
 	border: 1px solid white;
 }
@@ -155,7 +156,6 @@ tbody{
 	width:20px;
 	height:20px;
 	border-radius: 10px;
-	background: url('../img/vined.png');
 	background-size: cover;
 	border: 1px solid white;
 }
@@ -163,7 +163,6 @@ tbody{
 	width:20px;
 	height:20px;
 	border-radius: 10px;
-	background: url('../img/belou.png');
 	background-size: cover;
 	border: 1px solid white;
 }
@@ -285,4 +284,19 @@ button.input-button:active {
 
 svg.bi-three-dots-vertical{
 	color: #A0A0A0;
+}
+
+.navbar-ico {
+	padding-left: 0;
+	margin-left: 25px;
+}
+
+.contact-phone {
+	margin-right: 6px;
+}
+.btn.btn-outline-success:active{
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) inset !important;
+}
+.btn.btn-outline-primary:active{
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) inset !important;
 }

@@ -1,5 +1,5 @@
 body {
-    background: url("../img/bottomcards.jpg") no-repeat;
+    background: url("../../../mainpage-final/assets/img/bottomcards.jpg") no-repeat;
     background-size: cover;
 }
 input[type="checkbox"].input-checkbox {
@@ -139,32 +139,32 @@ button.input-button:active {
     color: #ffffff;
 }
 .winner{
-	background: url("../img/winner.png") no-repeat;
+	background: url("../../../mainpage-final/assets/img/winner.png") no-repeat;
 	background-size: cover;
 	width:150px;
 	height:150px;
 }
 .seller{
-	background: url("../img/seller.png") no-repeat;
+	background: url("../../../mainpage-final/assets/img/seller.png") no-repeat;
 	background-size: cover;
 	width:150px;
 	height:150px;
 }
 .chel{
-	background: url("../img/chel.png") no-repeat;
+	background: url("../../../mainpage-final/assets/img/chel.png") no-repeat;
 	background-size: cover;
 	width:150px;
 	height: 260px;
 }
 .globe{
-	background: url("../img/globe.png") no-repeat;
+	background: url("../../../mainpage-final/assets/img/globe.png") no-repeat;
 	background-size: cover;
 	width:100px;
 	height: 160px;
 	margin-right: 1em;
 }
 .psb{
-	background: url("../img/psb.jpg") no-repeat;
+	background: url("../../../mainpage-final/assets/img/psb.jpg") no-repeat;
 	background-size: cover;
 	width:250px;
 	height: 100px;
