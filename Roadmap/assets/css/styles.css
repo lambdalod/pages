@@ -3,6 +3,50 @@ body {
   background-size: cover;
   padding-bottom: 3em;
 }
+.image-button{
+  color:white;
+}
+.image-button:hover{
+  color:white;
+}
+.nav-current{
+  color: #E3E5E8 !important;
+  font-size: 1.1em;
+  text-align: center;
+  text-decoration: none !important;
+}
+.nav-current:hover{
+  color: #E3E5E8;
+  text-decoration: underline;
+}
+.nav-current:active{
+  color: #E3E5E8;
+  text-decoration: underline;
+}
+.nav-other{
+  color: #A0A0A0 !important;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-other:focus{
+  color: #A0A0A0;
+}
+.nav-other:hover{
+  color:#A0A0A0;
+}
+.line{
+  height:6px;
+  border-radius:3px;
+  background-image: linear-gradient(-90deg, #5CA3F2, #B642CE);
+}
+.empty-line{
+  height:6px;
+  background:none;
+}
+.nav-item{
+  margin-right: 1em;
+}
 .map {
   /*position: absolute;*/
   /*width: 377px;*/
@@ -58,20 +102,26 @@ div.paper.dark-paper{
   background: linear-gradient(134.96deg, rgba(12, 12, 12, 0.7) 1.26%, rgba(12, 12, 12, 0.5) 99.2%);
 }
 .empty-area{
-  height:50px;
+  height:100px;
   background: none;
-  width:50px;
+  width:100px;
 }
 .filled-area{
-  height:50px;
+  height:100px;
   background: none;
-  border:1px solid #A0A0A0;
-  width: 50px;
+  border:1px solid #707070;
+  border-radius: 5px;
+  width: 100px;
 }
 .roadmap{
   background: url("../img/img_1.png") repeat-y;
-  background-size: contain;
+  background-size: auto;
+  width:70%;
+  height: 525px;
+  padding-left: 4em;
+  padding-right: 4em;
   background-position-x: 50%;
+  margin-top:10em;
 }
 input[type="checkbox"].input-checkbox {
   width: 16px;
@@ -97,9 +147,36 @@ input[type="checkbox"].input-checkbox:disabled {
 }
 
 .belou{
-  width:20px;
-  height:20px;
+  width:20px ;
+  height:20px ;
   border-radius: 10px;
   background-size: cover;
   border: 1px solid white;
+  padding:0;
+}
+.spacer {
+  height: 3em;
+}
+.image{
+  width:90px;
+  height:90px;
+  background-color:#707070aa;
+  border-radius: 3px;
+  background-size: cover;
+  border:0;
+  padding: 0.75em;
+}
+.btn.button-grey{
+  outline:0;
+  border-radius: 3px;
+  border: 1px solid #A0A0A0;
+  background-image: linear-gradient(0deg, #ffffff22, #ffffff44);
+  color:white;
+
+}
+.btn.button-grey:hover{
+  filter: brightness(80%);
+}
+.btn.button-grey:focus{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 164, 0.6);
 }
