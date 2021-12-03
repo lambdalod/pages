@@ -1,0 +1,46 @@
+body{
+	padding:1em;
+	background-color: #404040
+}
+.image-button{
+	color:white;
+}
+.image-button:hover{
+	color:white;
+}
+.nav-current{
+	color: #E3E5E8 !important;
+	font-size: 1.5em;
+	text-decoration: none !important;
+}
+.nav-current:hover{
+	color: #E3E5E8;
+	text-decoration: underline;
+}
+.nav-current:active{
+	color: #E3E5E8;
+	text-decoration: underline;
+}
+.nav-other{
+	color: #A0A0A0 !important;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+.nav-link:focus{
+	color: #A0A0A0;
+}
+.nav-link:hover{
+	color:#A0A0A0;
+}
+.line{
+	height:6px;
+	border-radius:3px;
+	background-image: linear-gradient(-90deg, #5CA3F2, #B642CE);
+}
+.empty-line{
+	height:6px;
+	background:none;
+}
+.nav-item{
+	margin-right: 1em;
+}
