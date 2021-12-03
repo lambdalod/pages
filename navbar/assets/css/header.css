@@ -1,6 +1,6 @@
 body{
-	padding:1em;
-	background-color: #404040
+	background: url("../img/header_back.jpg") no-repeat;
+	background-size: cover;
 }
 .image-button{
 	color:white;
