@@ -1,0 +1,23 @@
+.stick-to-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+.mascot-pic {
+}
+
+.mascot-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 15%;
+}
+
+.choice-container {
+  margin-bottom: 10%;
+}
+
+.stick-bottom {
+  position: fixed;
+  bottom: 20%;
+}
+
