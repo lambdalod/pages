@@ -66,7 +66,7 @@
                 </li>
             </ul>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-user-circle fa-2x"></i></a>
-            <a class='image-button navbar-ico' href="#"><i class="fa fa-bell fa-2x"></i></a>
+            <a id="notifications" tabindex="0" class='image-button navbar-ico' href="javascript:void(0)" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Уведомления" data-bs-content="Так держать, всё прочитано!"><i class="fa fa-bell fa-2x"></i></a>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-comments fa-2x"></i></a>
             <a class='image-button navbar-ico' href="#"><i class="fa fa-search fa-2x"></i></a>
         </div>
@@ -323,21 +323,13 @@
                 <div class="col">
                     <h4>Неиспользованные дни отпуска</h4>
                 </div>
-                <div class="col" style="text-align: right;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                         viewBox="0 0 16 16" class="bi bi-three-dots-vertical"
-                         style="padding-right: 0;padding-left: 0;margin-right: 25px;margin-left: 25px;">
-                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
-                    </svg>
-                </div>
-
             </div>
             <p>Узнай сколько дней отпуска у тебя есть.&nbsp; Выбери дату начала отпуска:</p>
             <div class="row">
-                <div class="col d-xl-flex align-items-xl-start"><input type="date" class='input-date'
+                <div class="col d-xl-flex align-items-xl-start"><input id='vacinput' type="date" class='input-date'
                                                                        style="margin-top: 5px;"></div>
                 <div class="col d-xl-flex flex-grow-1 justify-content-xl-center align-items-xl-start">
-                    <button class="btn input-button shadow" type="button" style="width: 80%;">Узнать</button>
+                    <button id="vacbtn" class="btn input-button shadow" type="button" style="width: 80%;">Узнать</button>
                 </div>
             </div>
             <div class='row d-flex justify-content-center align-items-end' style='height: 200px;'>
@@ -348,13 +340,6 @@
             <div class="row" style="margin-top: 10px;">
                 <div class="col">
                     <h4>Обучение</h4>
-                </div>
-                <div class="col" style="text-align: right;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                         viewBox="0 0 16 16" class="bi bi-three-dots-vertical"
-                         style="padding-right: 0;padding-left: 0;margin-right: 25px;margin-left: 25px;">
-                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
-                    </svg>
                 </div>
             </div>
             <p style="margin-bottom: 0;"><a href="#" class='custom-link'>Личный кабинет</a></p>
@@ -368,18 +353,10 @@
                 <div class="col">
                     <h4>Достижения</h4>
                 </div>
-                <div class="col" style="text-align: right;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                         viewBox="0 0 16 16" class="bi bi-three-dots-vertical"
-                         style="padding-right: 0;padding-left: 0;margin-right: 25px;margin-left: 25px;">
-                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
-                    </svg>
-                </div>
             </div>
             <div class='d-flex justify-content-between' style="height:340px;">
                 <div>
-                    <img src="assets/img/winner.png" class="winner">
-                    <img src="assets/img/winner.png" class="seller">
+                    <i>Достижений пока нет...</i>
                 </div>
                 <div class='d-flex aligh-items-end flex-column'>
                     <img src="assets/img/chel.png" class="chel mt-auto">
@@ -388,7 +365,9 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     let clock = document.getElementById('active-clock');
     let seconds = 5 * 60 + 27;
@@ -401,6 +380,23 @@
         if (seconds < 0) clearInterval(int);
         clock.innerHTML = '<i class="fa fa-play" style="margin-right: 10px;"></i> <span style="color:white">'+crts+'</span>';
     }, 1000);
+    $(document).ready(function () {
+        $('input[type="checkbox"].input-checkbox').on('click', function () {
+            if (confirm("Вы уверены что хотите удалить эту задачу?")) {
+                $(this).parent().parent().remove();
+            } else {
+                $(this).prop('checked', false);
+            }
+        });
+        $('#vacbtn').on('click', function () {
+            let vacinput = $('#vacinput').val();
+            if (vacinput === "") alert("Укажите корректную дату!");
+            else alert("У тебя 0 неиспользованных дней отпуска!");
+        });
+        $('#notifications').on('click', function () {
+            $(this).popover('toggle');
+        });
+    });
 </script>
 </body>
 
