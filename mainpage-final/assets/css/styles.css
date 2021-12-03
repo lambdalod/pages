@@ -108,7 +108,7 @@ svg.bi-three-dots-vertical{
 	color: #A0A0A0;
 }
 input[type="checkbox"]:checked.input-checkbox {
-    background-image: url("../img/check.png");
+    background-image: url("../../../Roadmap/assets/img/check.png");
     border: 0;
 }
 
