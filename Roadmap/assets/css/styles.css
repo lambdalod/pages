@@ -99,7 +99,7 @@ div.paper.dark-paper{
   border:0;
   margin-top:0.5em;
   margin-botton:0.5em;
-  background: linear-gradient(134.96deg, rgba(12, 12, 12, 0.7) 1.26%, rgba(12, 12, 12, 0.5) 99.2%);
+  background: linear-gradient(134.96deg, rgba(12, 12, 12, 0.7) 1.26%, rgba(12, 12, 12, 0.34) 99.2%);
 }
 .empty-area{
   height:100px;
