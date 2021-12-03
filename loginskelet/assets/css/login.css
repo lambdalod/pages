@@ -67,8 +67,8 @@ input[type="checkbox"].input-checkbox:disabled {
     border-color: #B9BFC5;
 }
 
-button.input-button {
-    max-width: 300px;
+.input-button {
+    width:20em;
     height: 42px;
     color: #ffffff;
     background: linear-gradient(91.37deg, #F05919 15.89%, #CD3615 102%);
