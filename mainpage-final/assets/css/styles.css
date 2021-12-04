@@ -59,6 +59,17 @@ div.paper {
     margin-top:2em;
     margin-bottom:2em;
 }
+div.paper-light{
+	color: #ffffff;
+	width: 100vw;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #777777;
+	background: linear-gradient(134.96deg, rgba(255, 255, 255, 0.2) 1.26%, rgba(255, 255, 255, 0.1) 99.2%);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(100px);
+	border-radius: 10px;
+}
 .text-description{
 	font-size:1.1em;
 	color:#AFBFDD;
@@ -303,6 +314,14 @@ svg.bi-three-dots-vertical{
 }
 .btn.btn-outline-primary:active{
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) inset !important;
+}
+.btn.btn-link{
+	color:white !important;
+	text-decoration: none !important;
+}
+.btn-link:hover{
+	color:white !important;
+	text-decoration: none !important;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
